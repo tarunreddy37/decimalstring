@@ -1,0 +1,29 @@
+import java.util.*;
+class decimalstring
+{
+public static void main(String args[])
+{
+	int c,d;
+	String str;
+	Scanner sc=new Scanner(System.in);
+	System.out.println("1.decimal to binary");
+	System.out.println("2.decimal to octal");
+	System.out.println("3.decimal to hexal");
+	System.out.println("enter your choice:");
+	c=sc.nextInt();
+	System.out.println("enter decimal value:");
+	d=sc.nextInt();
+	switch(c)
+	{
+	case 1: str=Integer.toBinaryString(d);
+		System.out.println("Binary:"+str);
+		break;
+	case 2: str=Integer.toOctalString(d);
+		System.out.println("Octal:"+str);
+		break;
+	case 3: str=Integer.toHexString(d);
+		System.out.println("Hexal:"+str);
+		break;
+}
+}
+}
